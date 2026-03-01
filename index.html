@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kangili MABONDA - Développeur Front-End</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- CDN pour FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <!-- canvas pour le fond animé avec Particles.js -->
+      <div id="particles-js"></div>
+
+      <nav>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+
+        <!-- burger menu pour mobile -->
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <h1>Kangili <span class="last-name">MABONDA</span></h1>
+        <p class="subtitle">Développeur Front-End | HTML • CSS • JavaScript</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">Voir mes projets</a>
+          <a href="https://github.com/Kangili" target="_blank" class="btn"
+            >GitHub</a
+          >
+          <a
+            href="https://linkedin.com/in/TON-LINKEDIN"
+            target="_blank"
+            class="btn"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section id="projects">
+      <h2>Mes Projets</h2>
+      <div class="projects-container">
+        <div class="project">
+          <span class="project-category">Site vitrine</span>
+          <h3>Nina Carducci</h3>
+          <img src="img/nina_carducci.png" alt="Projet Nina Carducci" />
+          <p>Site vitrine moderne, responsive et optimisé SEO.</p>
+
+          <!-- Technologies -->
+          <div class="project-tech">
+            <ul class="tech-list">
+              <!-- HTML5 : Langage de balisage pour la structure des pages web -->
+              <li><i class="fab fa-html5 tech-icon" title="HTML5"></i></li>
+
+              <!-- CSS3 : Langage utilisé pour la mise en forme et le style des pages web -->
+              <li><i class="fab fa-css3-alt tech-icon" title="CSS3"></i></li>
+
+              <!-- JavaScript : Langage de programmation pour rendre les pages interactives -->
+              <li><i class="fab fa-js tech-icon" title="JavaScript"></i></li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/Kangili/Nina-Carducci"
+            target="_blank"
+            class="btn primary"
+            >Voir le projet</a
+          >
+        </div>
+
+        <div class="project">
+          <span class="project-category">Application React</span>
+          <h3>Kasa</h3>
+          <img src="img/kasa.png" alt="Projet Kasa" />
+          <p>Plateforme de location avec React et routing dynamique.</p>
+
+          <!-- Technologies -->
+          <div class="project-tech">
+            <ul class="tech-list">
+              <!-- React : Bibliothèque JavaScript pour la création d'interfaces utilisateur -->
+              <li><i class="fab fa-react tech-icon" title="React"></i></li>
+
+              <!-- CSS3 : Langage utilisé pour la mise en forme et le style des pages web -->
+              <li><i class="fab fa-css3-alt tech-icon" title="CSS3"></i></li>
+
+              <!-- JavaScript : Langage de programmation pour rendre les pages interactives -->
+              <li><i class="fab fa-js tech-icon" title="JavaScript"></i></li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/Kangili/P8KASA"
+            target="_blank"
+            class="btn primary"
+            >Voir le projet</a
+          >
+        </div>
+
+        <div class="project">
+          <span class="project-category">Portfolio interactif</span>
+          <h3>Sophie Bluel</h3>
+          <img src="img/sophiebluel.png" alt="Projet Sophie Bluel" />
+          <p>Animations JavaScript et interactions dynamiques.</p>
+
+          <!-- Technologies -->
+          <div class="project-tech">
+            <ul class="tech-list">
+              <!-- HTML5 : Langage de balisage pour la structure des pages web -->
+              <li><i class="fab fa-html5 tech-icon" title="HTML5"></i></li>
+
+              <!-- CSS3 : Langage utilisé pour la mise en forme et le style des pages web -->
+              <li><i class="fab fa-css3-alt tech-icon" title="CSS3"></i></li>
+
+              <!-- JavaScript : Langage de programmation pour rendre les pages interactives -->
+              <li><i class="fab fa-js tech-icon" title="JavaScript"></i></li>
+            </ul>
+          </div>
+
+          <a
+            href="https://github.com/Kangili/sophie-bluel"
+            target="_blank"
+            class="btn primary"
+            >Voir le projet</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Compétences techniques</h2>
+      <div class="skill">
+        <div class="skill-info"><span>HTML</span><span>90%</span></div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="90"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-info"><span>CSS</span><span>85%</span></div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="85"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+        <div class="skill-bar">
+          <div class="skill-progress" data-progress="75"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>À propos</h2>
+      <div class="about-content">
+        <img src="img/kangili.jpg" alt="Kangili MABONDA" class="about-img" />
+        <p>
+          Développeur web formé chez OpenClassrooms, je conçois des interfaces
+          modernes, accessibles et performantes. Je mets l’accent sur la qualité
+          du code, l’expérience utilisateur et les bonnes pratiques SEO.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Votre nom" required />
+        <input type="email" placeholder="Votre email" required />
+        <textarea rows="5" placeholder="Votre message" required></textarea>
+        <button type="submit" class="btn primary">Envoyer</button>
+      </form>
+    </section>
+
+    <!-- Script Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
