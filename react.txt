@@ -1,0 +1,12 @@
+ OUVRIR DANS BASH : cd ~/Documents/Projet-Openclassrooms/NouveauPortfolio
+
+git add .
+
+git commit -m "Message descriptif de ce que tu as changé"
+
+git push origin main
+
+git status(ne pas mettre)
+
+
+dans un autre terminal pour lancer le projet npm start 

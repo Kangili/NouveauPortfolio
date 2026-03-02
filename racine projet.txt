@@ -1,0 +1,41 @@
+public/
+  index.html         <-- ton fichier HTML de base (React l'utilise)
+  img/
+    kangili.jpg
+    nina_carducci.png
+    kasa.png
+    sophiebluel.png
+
+
+
+/src
+  /components
+    Hero.js
+    Projects.js
+    Skills.js
+    About.js
+    Contact.js
+  App.js
+  index.js
+  index.css
+
+
+
+
+/src
+  /components
+    Hero.js
+    Projects.js
+    Skills.js
+    About.js
+    Contact.js
+  App.js(dans src)
+  index.js(dans src)
+  index.css(dans src)
+/public
+  index.html
+  /img
+    kangili.jpg
+    nina_carducci.png
+    kasa.png
+    sophiebluel.png

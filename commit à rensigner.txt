@@ -1,0 +1,24 @@
+Ajout des composants de base – Lorsque tu ajoutes les composants principaux (Hero, Projects, Skills, etc.).
+git commit -m "Ajout des composants de base : Hero, Projects, Skills"
+
+Mise en place des styles globaux – Quand tu ajoutes index.css ou tes styles globaux.
+git commit -m "Mise en place des styles globaux dans index.css"
+
+Correction des liens d'images – Quand tu corriges les liens des images qui ne s'affichent pas.
+git commit -m "Correction des liens d'images dans le composant Projects"
+
+Ajout de la fonctionnalité du menu burger – Lorsque tu ajoutes ou corriges la fonctionnalité du menu burger dans le Hero.js.
+git commit -m "Ajout de la fonctionnalité du menu burger"
+
+
+Ajout de l'animation de visibilité des sections – Quand tu ajoutes l'animation pour rendre les sections visibles lors du scroll.
+git commit -m "Ajout des animations de visibilité pour les sections"
+
+Configuration de Particles.js – Quand tu configures ou corriges Particles.js.
+git commit -m "Configuration de Particles.js pour la section Hero"
+
+Fix des styles responsives – Lorsque tu corriges des problèmes de responsive ou ajoutes des règles pour des tailles d'écrans spécifiques.
+git commit -m "Correction des styles responsives pour les petits écrans"
+
+Correction des images inversées – Quand tu corriges l'orientation des images (comme pour Sophie Bluel et Kangili).
+git commit -m "Correction de l'orientation des images Sophie Bluel et Kangili"
