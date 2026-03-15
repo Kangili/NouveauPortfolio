@@ -1,0 +1,8 @@
+les projets mettre le contexte pour chaque projet l'objectif et percceptive d'améloriation 
+
+faire copier coller tout les composant dans chatgpt travailler sur l'accesibiltié navugaution clavier et attribut utile et de m'expliquer 
+comment faire du seo avec react 
+
+formulaire rajouter un label pour chaque champs et rajouter message d'erreur dans le formulaire et fonctionnel message envoyer une fois le formulaire rempli 
+
+deploiement en ligne gitpage ou vercel
