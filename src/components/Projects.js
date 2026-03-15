@@ -3,12 +3,12 @@ import React from 'react';
 
 const projects = [
   {
-    category: 'Site vitrine',
-    title: 'Nina Carducci',
-    img: '/img/nina_carducci.png',
-    description: 'Site vitrine moderne, responsive et optimisé SEO.',
+    category: 'Portfolio interactif',
+    title: 'Sophie Bluel',
+    img: '/img/sophiebluel.png',
+    description: 'Animations JavaScript et interactions dynamiques.',
     tech: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js'],
-    link: 'https://github.com/Kangili/Nina-Carducci'
+    link: 'https://github.com/Kangili/sophie-bluel'
   },
   {
     category: 'Application React',
@@ -19,12 +19,12 @@ const projects = [
     link: 'https://github.com/Kangili/P8KASA'
   },
   {
-    category: 'Portfolio interactif',
-    title: 'Sophie Bluel',
-    img: '/img/sophiebluel.png',
-    description: 'Animations JavaScript et interactions dynamiques.',
+    category: 'Site vitrine',
+    title: 'Nina Carducci',
+    img: '/img/nina_carducci.png',
+    description: 'Site vitrine moderne, responsive et optimisé SEO.',
     tech: ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js'],
-    link: 'https://github.com/Kangili/sophie-bluel'
+    link: 'https://github.com/Kangili/Nina-Carducci'
   }
 ];
 

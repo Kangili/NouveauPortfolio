@@ -1,0 +1,24 @@
+1️⃣ Pourquoi avez-vous structuré votre portfolio comme ça ?
+
+J’ai structuré mon portfolio en composants avec React pour séparer chaque section du site.
+Par exemple Hero, Projects, Skills, About et Contact.
+Cela rend le code plus clair, plus facile à maintenir et à modifier.
+
+2️⃣ Quelle est la logique derrière votre Design System ?
+
+J’ai voulu garder un design simple et cohérent sur tout le site.
+J’ai utilisé les mêmes couleurs, typographies et styles pour les sections afin d’avoir une interface harmonieuse.
+
+3️⃣ Quel projet vous représente le plus ?
+
+Le projet qui me représente le plus est Kasa, car il m’a permis de travailler avec React et de créer plusieurs composants réutilisables.
+
+4️⃣ Quelle a été votre plus grande difficulté technique ?
+
+Ma plus grande difficulté a été l’organisation des composants dans React.
+J’ai résolu cela en séparant les composants pour rendre le code plus clair.
+
+5️⃣ Comment avez-vous utilisé l’IA ?
+
+J’ai utilisé l’IA pour m’aider à comprendre certaines erreurs et trouver des pistes de solution.
+Mais j’ai toujours vérifié et compris le code avant de l’utiliser.

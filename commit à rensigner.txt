@@ -1,5 +1,5 @@
 Ajout des composants de base – Lorsque tu ajoutes les composants principaux (Hero, Projects, Skills, etc.).
-git commit -m "Ajout des composants de base : Hero, Projects, Skills"
+git commit -m "Ajout des composants de base : Hero, Projects, Skills" ok 
 
 Mise en place des styles globaux – Quand tu ajoutes index.css ou tes styles globaux.
 git commit -m "Mise en place des styles globaux dans index.css"
