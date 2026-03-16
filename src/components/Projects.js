@@ -63,17 +63,17 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects">
-      <h2>Mes Projets</h2>
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Mes Projets</h2>
 
       <div className="projects-container">
         {projects.map((p, i) => {
           const isOpen = expanded[i]; // état du projet courant
           return (
-            <div className="project" key={i}>
+            <article className="project" key={i}>
               <span className="project-category">{p.category}</span>
               <h3>{p.title}</h3>
-              <img src={p.img} alt={p.title} />
+              <img src={p.img} alt={`Aperçu du projet ${p.title}`} />
 
               <p>
                 <strong>Contexte :</strong> {displayText(p.context, isOpen)}
@@ -88,33 +88,38 @@ const Projects = () => {
                 {displayText(p.improvement, isOpen)}
               </p>
 
-              {/* Bouton pour déplier/replier tout le projet */}
-              <span
+              {/* Bouton accessible pour déplier/replier tout le projet */}
+              <button
                 onClick={() => toggleProject(i)}
-                style={{ color: "#2563eb", cursor: "pointer" }}
+                aria-expanded={isOpen}
+                aria-controls={`project-details-${i}`}
+                style={{ color: "#2563eb", cursor: "pointer", background: "none", border: "none", padding: 0 }}
               >
                 {isOpen ? "Voir moins" : "Voir plus"}
-              </span>
+              </button>
 
-              <div className="project-tech">
-                <ul className="tech-list">
-                  {p.tech.map((icon, idx) => (
-                    <li key={idx}>
-                      <i className={`${icon} tech-icon`} title={icon}></i>
-                    </li>
-                  ))}
-                </ul>
+              <div id={`project-details-${i}`} hidden={!isOpen}>
+                {/* Contenu détaillé accessible aux lecteurs d'écran */}
+                <div className="project-tech">
+                  <ul className="tech-list">
+                    {p.tech.map((icon, idx) => (
+                      <li key={idx}>
+                        <i className={`${icon} tech-icon`} title={icon}></i>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn primary"
+                >
+                  Voir le projet
+                </a>
               </div>
-
-              <a
-                href={p.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn primary"
-              >
-                Voir le projet
-              </a>
-            </div>
+            </article>
           );
         })}
       </div>

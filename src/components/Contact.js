@@ -1,12 +1,13 @@
-// src/components/Contact.js
 import React, { useEffect } from 'react';
 
 const Contact = () => {
   useEffect(() => {
-    const btn = document.createElement('div');
+    // Création du bouton "scroll to top"
+    const btn = document.createElement('button');
     btn.id = 'scrollTopBtn';
     btn.className = 'scroll-top';
     btn.innerHTML = '⬆';
+    btn.setAttribute('aria-label', 'Retour en haut de la page');
     document.body.appendChild(btn);
 
     window.addEventListener('scroll', () => {
@@ -17,12 +18,18 @@ const Contact = () => {
   }, []);
 
   return (
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
       <form>
-        <input type="text" placeholder="Votre nom" required />
-        <input type="email" placeholder="Votre email" required />
-        <textarea rows="5" placeholder="Votre message" required></textarea>
+        <label htmlFor="name">Votre nom</label>
+        <input id="name" type="text" placeholder="Votre nom" required />
+
+        <label htmlFor="email">Votre email</label>
+        <input id="email" type="email" placeholder="Votre email" required />
+
+        <label htmlFor="message">Votre message</label>
+        <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+
         <button type="submit" className="btn primary">Envoyer</button>
       </form>
     </section>
