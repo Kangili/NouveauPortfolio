@@ -1,4 +1,4 @@
-les projets mettre le contexte pour chaque projet l'objectif et percceptive d'améloriation 
+les projets mettre le contexte pour chaque projet l'objectif et percceptive d'améloriation ok
 
 faire copier coller tout les composant dans chatgpt travailler sur l'accesibiltié navugaution clavier et attribut utile et de m'expliquer 
 comment faire du seo avec react 
