@@ -45,47 +45,21 @@ const projects = [
 ];
 
 const Projects = () => {
+  // État pour gérer l'affichage complet des projets
   const [expanded, setExpanded] = useState({});
 
-  const toggle = (key) => {
+  // Basculer "Voir plus / Voir moins" d'un projet
+  const toggleProject = (key) => {
     setExpanded((prev) => ({
       ...prev,
-      [key]: !prev[key]
+      [key]: !prev[key] // inverse l'état du projet
     }));
   };
 
-  const displayText = (text, key) => {
-    const isOpen = expanded[key];
-
-    if (text.length <= truncateLength) {
-      return text;
-    }
-
-    if (isOpen) {
-      return (
-        <>
-          {text}{" "}
-          <span
-            onClick={() => toggle(key)}
-            style={{ color: "#2563eb", cursor: "pointer", marginLeft: "5px" }}
-          >
-            Voir moins
-          </span>
-        </>
-      );
-    }
-
-    return (
-      <>
-        {text.substring(0, truncateLength)}...{" "}
-        <span
-          onClick={() => toggle(key)}
-          style={{ color: "#2563eb", cursor: "pointer" }}
-        >
-          Voir plus
-        </span>
-      </>
-    );
+  // Afficher texte tronqué ou complet selon l'état
+  const displayText = (text, isOpen) => {
+    if (text.length <= truncateLength) return text;
+    return isOpen ? text : text.substring(0, truncateLength) + "...";
   };
 
   return (
@@ -93,48 +67,56 @@ const Projects = () => {
       <h2>Mes Projets</h2>
 
       <div className="projects-container">
-        {projects.map((p, i) => (
-          <div className="project" key={i}>
-            <span className="project-category">{p.category}</span>
+        {projects.map((p, i) => {
+          const isOpen = expanded[i]; // état du projet courant
+          return (
+            <div className="project" key={i}>
+              <span className="project-category">{p.category}</span>
+              <h3>{p.title}</h3>
+              <img src={p.img} alt={p.title} />
 
-            <h3>{p.title}</h3>
+              <p>
+                <strong>Contexte :</strong> {displayText(p.context, isOpen)}
+              </p>
 
-            <img src={p.img} alt={p.title} />
+              <p>
+                <strong>Objectif :</strong> {displayText(p.objective, isOpen)}
+              </p>
 
-            <p>
-              <strong>Contexte :</strong> {displayText(p.context, `context-${i}`)}
-            </p>
+              <p>
+                <strong>Perspectives d'amélioration :</strong>{" "}
+                {displayText(p.improvement, isOpen)}
+              </p>
 
-            <p>
-              <strong>Objectif :</strong>{" "}
-              {displayText(p.objective, `objective-${i}`)}
-            </p>
+              {/* Bouton pour déplier/replier tout le projet */}
+              <span
+                onClick={() => toggleProject(i)}
+                style={{ color: "#2563eb", cursor: "pointer" }}
+              >
+                {isOpen ? "Voir moins" : "Voir plus"}
+              </span>
 
-            <p>
-              <strong>Perspectives d'amélioration :</strong>{" "}
-              {displayText(p.improvement, `improvement-${i}`)}
-            </p>
+              <div className="project-tech">
+                <ul className="tech-list">
+                  {p.tech.map((icon, idx) => (
+                    <li key={idx}>
+                      <i className={`${icon} tech-icon`} title={icon}></i>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            <div className="project-tech">
-              <ul className="tech-list">
-                {p.tech.map((icon, i) => (
-                  <li key={i}>
-                    <i className={`${icon} tech-icon`} title={icon}></i>
-                  </li>
-                ))}
-              </ul>
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn primary"
+              >
+                Voir le projet
+              </a>
             </div>
-
-            <a
-              href={p.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn primary"
-            >
-              Voir le projet
-            </a>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
