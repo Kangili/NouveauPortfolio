@@ -19,7 +19,7 @@ const projects = [
   {
     category: "Application React",
     title: "Kasa",
-    img: "/img/kasa.png",
+    img: "/img/kasa.PNG",
     context:
       "Application développée avec React simulant une plateforme de location d’appartements.",
     objective:

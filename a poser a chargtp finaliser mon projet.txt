@@ -1,8 +1,19 @@
-les projets mettre le contexte pour chaque projet l'objectif et percceptive d'améloriation ok
+1) les projets mettre le contexte pour chaque projet l'objectif et percceptive d'améloriation ok
 
-faire copier coller tout les composant dans chatgpt travailler sur l'accesibiltié navugaution clavier et attribut utile et de m'expliquer 
-comment faire du seo avec react 
+2) faire copier coller tout les composant dans chatgpt travailler sur l'accesibiltié navugaution clavier et attribut utile et de m'expliquer 
+comment faire du seo avec react ok 
 
-formulaire rajouter un label pour chaque champs et rajouter message d'erreur dans le formulaire et fonctionnel message envoyer une fois le formulaire rempli 
+3) formulaire rajouter un label pour chaque champs et rajouter message d'erreur dans le formulaire et fonctionnel message envoyer une fois le formulaire rempli ok 
 
-deploiement en ligne gitpage ou vercel
+4) deploiement en ligne gitpage ou vercel
+
+
+2)Hero.js → Burger menu accessible, titres sémantiques, décorations ignorées par les lecteurs d’écran.
+
+Projects.js → “Voir plus / Voir moins” accessible, chaque projet en <article>, images avec alt descriptif.
+
+Skills.js → Barres de compétences avec role="progressbar" et aria-label, section avec titre accessible.
+
+About.js → Image descriptive, section avec titre lié pour lecteurs d’écran.
+
+Contact.js → Formulaire avec labels, bouton scroll-top accessible, section avec titre lié
